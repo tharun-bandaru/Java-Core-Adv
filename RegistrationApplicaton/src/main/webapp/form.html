@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body >
+
+<form method='post' action='RegisterServlet'>
+
+  User Name     <input type="text" name="user"/><br>
+  Password      <input type="password" name="password"/><br>
+ 
+  
+  Qualification  <input type="checkbox" name="qual" value="MSC" >MSC<br>
+  				 <input type="checkbox" name="qual" value="BSC" >BSC<br>
+  				 <input type="checkbox" name="qual" value="M.tech" >M.tech<br><br>
+  				
+  Gender: <input type="radio" name="gender" value="male">Male
+          <input type="radio" name="gender" value="female">Female<br><br>
+	
+  
+  Technologies <select name="technologies" size="3" multiple>
+  				   <option value="c">C</option>
+  				   <option value="c++">C++</option>
+  				   <option value="java">Java</option>
+  				   <option value="python">Python</option>
+  				</select>
+  		<br><br><br>
+  Country <select name="country">
+  			<option value="in" >India</option>
+  			<option value="us" >US</option>
+  			<option value="sydney" >Australia</option>
+  			
+          </select>	
+  <br><br><br>	   
+  Address:<br><br>
+  doorno: <input type="text" name="addr" ><br> 
+  street: <input type="text" name="addr" ><br>
+  state:  <input type="text" name="addr" ><br>
+  pincode: <input type="text" name="addr" ><br>
+        
+  Comments:<textarea name="review" rows="3" columns="50" ></textarea> 
+        
+  <input type="submit" value="register">
+ 
+  
+  
+</form>
+</body>
+</html>

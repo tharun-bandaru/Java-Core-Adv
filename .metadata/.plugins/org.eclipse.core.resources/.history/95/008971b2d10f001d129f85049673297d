@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" %>
+<%@taglib uri="http://java.sun.com/jstl/sql_rt" prefix="sql"%>
+<html>
+
+<body>
+	<sql:setDataSource
+	 driver="oracle.jdbc.driver.OracleDriver"
+	 url="jdbc:oracle:thin:@localhost:1521:xe"
+	 user="system"
+	 password="tharun123"
+	/>
+	connection created successfully......<br>
+	<sql:update var="result" sql="create table newEmp(eid number primarykey,
+	ename varchar2(20),esal number)"/>
+	
+	<h1>table created successfully.....${result}</h1>
+	
+	
+	
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 elements to &apos;lib&apos;&#x0D;&#x0A;- Original project: &apos;JSTLExamples&apos;&#x0D;&#x0A;- Destination element: &apos;lib&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     servlet-api.jar&#x0D;&#x0A;     taglibs-standard-spec-1.2.5.jar&#x0D;&#x0A;     jsp-api.jar&#x0D;&#x0A;     taglibs-standard-impl-1.2.5.jar" description="Copy files" element1="src/main/webapp/WEB-INF/lib/servlet-api.jar" element2="src/main/webapp/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar" element3="src/main/webapp/WEB-INF/lib/jsp-api.jar" element4="src/main/webapp/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar" files="4" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1659360083303" target="/JSTLFuntionTags/src/main/webapp/WEB-INF/lib" units="0" version="1.0"/>
+</session>

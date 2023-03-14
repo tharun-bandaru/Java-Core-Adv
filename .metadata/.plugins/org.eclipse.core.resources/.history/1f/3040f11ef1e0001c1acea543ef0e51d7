@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body bgcolor="lightpink">
+
+    <style type="text/css">
+    
+    #text{
+
+        height: 25px;
+        border-radius: 5px;
+        padding: 4px;
+        border: solid thin #aaa;
+    }
+
+    #button{
+
+        padding: 10px;
+        width: 100px;
+        color: white;
+        background-color: blue;
+        border: none;
+    }
+
+    #box{
+
+        background-color: grey;
+        margin: auto;
+        width: 300px;
+		
+        padding: 20px;
+    }
+    
+    </style>
+	<center><font color="blue"><h1><u>XYZ COMPANY</u></h1></center></font>
+	<center><font><h5><i>VENTURE CAPITAL INDIA</i></h5></font></center>
+	<br><br><br>
+    <div id="box">
+    
+        <form method="get" action="./LoginServlet">
+            <div style="font-size: 20px;margin: 10px;color: white;">PREMIUM OR FREE</div>
+
+       
+        any premium access?
+        YES<input id="text" type="radio" name="premium" value="yes">
+                            
+         NO<input id="text" type="radio" name="premium" value="no"><br>
+        
+            <input id="button" type="submit" value="submit"><br><br>
+        </form>
+    </div>
+</body>
+</html>

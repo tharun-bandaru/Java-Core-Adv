@@ -1,0 +1,35 @@
+package com.tcs;
+
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class BatchEx {
+
+ public static void main(String[] args) throws ClassNotFoundException, SQLException {
+
+  Class.forName("oracle.jdbc.driver.OracleDriver");
+     Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "ratan");
+     System.out.println("Connection created successfully.....");
+     
+
+     Statement statement = connection.createStatement();
+ 
+     statement.addBatch("create table emp(eid number, ename varchar2(30), esalary number)");  
+  statement.addBatch("insert into emp values(11,'vishwada',10000)");
+  statement.addBatch("insert into emp values(12,'ajay',15000)");  
+  statement.addBatch("update emp set esalary=esalary+500 where esalary>5000");
+  statement.addBatch("drop table emp");
+  
+  int[] results = statement.executeBatch();
+  for(int result : results)
+  { System.out.println(result);
+  }
+  
+  statement.close();
+  connection.close();
+  System.out.println("Resources are released successfully.....");
+ }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ol {
+  background: #ff9999;
+  padding: 20px;
+}
+
+ol li {
+  background: #ffe5e5;
+  color: darkred;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+
+</style>
+</head>
+<body>
+
+<p>Example of ordered lists:</p>
+<ol class="c">
+  <li><a href="">Coffee</a>
+  </li>
+  <li><a href="">Tea</a></li>
+  <li><a href="tcs.com">Cocola</a></li>
+</ol>
+
+
+
+</body>
+</html>

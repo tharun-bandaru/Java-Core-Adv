@@ -1,0 +1,51 @@
+package com.tcs;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+public class LoginServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+    
+    public LoginServlet() {
+       
+    }
+
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		response.setContentType("text/html");
+		HttpSession session=request.getSession();
+		String username=request.getParameter("username");
+		String password=request.getParameter("password");
+	    String premium=request.getParameter("premium");
+		session.setAttribute("premium", premium);
+		
+		if(username.equals("pavan") && password.equals("sai"))
+		 {
+			request.getRequestDispatcher("Success").forward(request, response);
+		 }
+		 else
+		 {
+			 PrintWriter writer=response.getWriter();
+			 writer.println("INVALID username or password");
+			 writer.println("That is Fail");
+			
+			RequestDispatcher dispatcher=request.getRequestDispatcher("LoginApp.html");
+			dispatcher.include(request, response);
+	  }
+	}
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		doGet(request, response);
+	}
+
+}

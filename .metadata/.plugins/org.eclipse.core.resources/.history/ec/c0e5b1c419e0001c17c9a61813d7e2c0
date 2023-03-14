@@ -1,0 +1,45 @@
+<html>
+<body bgcolor="#FFFF">
+<center><h1>PREMIUM INVESTORS(more than 1 lakh)</h1><center><br><br>
+<table border="4" width="100%">
+	<col style="width:40%">
+	<col style="width:30%">
+	<col style="width:30%">
+	<thead>
+	<tr>
+		<th>INVESTER_NAME</th>
+		<th>MOB NO</th>
+		<th>AMOUNT INVESTMENT</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<th>SAI</th>
+		<td>789858659</td>
+		<td>100000-200000</td>
+	</tr>
+	<tr>
+		<th>ARUN</th>
+		<td>9000813243</td>
+		<td>400000-500000</td>
+	</tr>
+	<tr>
+		<th>SRI CHARAN</th>
+		<td>8881231979</td>
+		<td>200000-300000</td>
+	</tr>
+	<tr>
+		<th>SHIVA</th>
+		<td>9781231899</td>
+		<td>10000-40000</td>
+	</tr>
+	<tr>
+		<th>RAM</th>
+		<td>6981318998</td>
+		<td>10000-20000</td>
+	</tr>
+
+	</tbody>
+</table>
+</body>
+</html>

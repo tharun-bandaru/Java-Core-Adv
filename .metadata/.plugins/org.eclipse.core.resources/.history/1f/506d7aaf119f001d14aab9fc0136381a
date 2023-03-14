@@ -1,0 +1,29 @@
+package com.tcs.servlet;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.Properties;
+
+public class TestConn {
+	public static Connection createConnection()
+	{	Connection connection = null;
+		try {
+		//load the proerties file 
+		Properties properties = new Properties();
+		System.out.println("properties file executed");
+		properties.load(new FileInputStream("E:\\javapractice\\AdvProj\\src\\main\\webapp\\abc.properties"));
+		
+		//Read the data from propertie file create the connection 
+		Class.forName(properties.getProperty("driver"));
+		connection = DriverManager.getConnection(properties.getProperty("url"),properties.getProperty("username"),properties.getProperty("password"));
+		System.out.println("connection created successfully...");
+		}
+		catch (IOException | ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+		return connection;
+	}
+}
